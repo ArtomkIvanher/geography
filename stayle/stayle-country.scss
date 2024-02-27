@@ -1,0 +1,243 @@
+$color1: #424242;
+
+@keyframes animation-country {
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes h-prosto-zagolovok {
+    
+    0%{
+        position: relative;
+    }
+    50%{
+        top: 0px;
+        color: $color1;
+        border-radius: 9px;
+        width: 60px;
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        top: 0px;
+        border-radius: 9px;
+        width: 60px;
+    }
+}
+
+@keyframes h-revers-zagolovok {
+    0%{
+        position: relative;
+    }
+    50%{
+        top: 0px;
+        color: rgb(255, 255, 255);
+        border-radius: 9px;
+        width: 60px;
+    }
+    100%{
+        color: $color1;
+        top: 0px;
+        border-radius: 9px;
+        width: 60px;
+    }
+}
+
+@keyframes p-prosto {
+    100%{
+        color: $color1;
+    }
+}
+
+@keyframes p-revers {
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes pomilka {
+    50%{
+        background-color: $color1;
+    }
+}
+
+
+
+.country{
+
+    .h-zagolovok{
+        text-align: center;
+        
+    }
+
+    .h-prosto-zagolovok{
+        color: $color1;
+        background-color: $color1;
+        text-align: center;
+        border-radius: 20px;
+        width: 40px;
+        display: inline-block;
+        padding: 5px 15px;
+        margin-top: 30px;
+        position: relative;
+        top: -89px;
+
+        &.active{
+            animation-name: h-prosto-zagolovok;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+    .h-revers-zagolovok{
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 20px;
+        width: 40px;
+        display: inline-block;
+        padding: 5px 15px;
+        margin-top: 30px;
+        position: relative;
+        top: -89px;
+
+        &.active{
+            animation-name: h-revers-zagolovok;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .country-flex{
+        display: flex;
+        font-size: 1.4rem;
+        width: 90%;
+        margin: 0 auto;
+        padding: 60px 0;
+        
+
+
+        div{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .h-prosto{
+                color: aliceblue;
+
+                &.active{
+                    animation-name: p-prosto;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .h-revers{
+                color: $color1;
+
+                &.active{
+                    animation-name: p-revers;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .p-prosto{
+                color: aliceblue;
+
+                &.active{
+                    animation-name: p-prosto;
+                    animation-duration: 0.75s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .p-revers{
+                color: $color1;
+
+                &.active{
+                    animation-name: p-revers;
+                    animation-duration: 0.75s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+
+            .img-prosto{
+                height: 400px;
+                position: relative;
+                left: 120%;
+
+                &.active{
+                    animation-name: animation-country;
+                    animation-duration: 0.75s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+                
+            }
+        }
+    }
+
+
+    .img-revers {
+                
+        position: relative;
+        left: -120%;
+
+        &.active{
+            animation-name: animation-country;
+            animation-duration: 0.75s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    
+
+    .country-main-revers{
+        background-color: $color1;
+        color: aliceblue;
+
+        
+
+        .country-flex{
+            flex-direction: row-reverse;
+
+            .img-revers {
+                
+                position: relative;
+                right: 220%;
+            }
+        }
+    }
+    
+}
+
+
+.pomilka{
+    display: flex;
+    justify-content: center;
+}
+
+#pomilkaID {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 9px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 30px;
+
+    animation-name: pomilka;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

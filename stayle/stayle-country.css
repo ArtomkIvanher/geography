@@ -1,0 +1,192 @@
+@keyframes animation-country {
+  100% {
+    left: 0;
+  }
+}
+@keyframes h-prosto-zagolovok {
+  0% {
+    position: relative;
+  }
+  50% {
+    top: 0px;
+    color: #424242;
+    border-radius: 9px;
+    width: 60px;
+  }
+  100% {
+    color: rgb(255, 255, 255);
+    top: 0px;
+    border-radius: 9px;
+    width: 60px;
+  }
+}
+@keyframes h-revers-zagolovok {
+  0% {
+    position: relative;
+  }
+  50% {
+    top: 0px;
+    color: rgb(255, 255, 255);
+    border-radius: 9px;
+    width: 60px;
+  }
+  100% {
+    color: #424242;
+    top: 0px;
+    border-radius: 9px;
+    width: 60px;
+  }
+}
+@keyframes p-prosto {
+  100% {
+    color: #424242;
+  }
+}
+@keyframes p-revers {
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+@keyframes pomilka {
+  50% {
+    background-color: #424242;
+  }
+}
+.country .h-zagolovok {
+  text-align: center;
+}
+.country .h-prosto-zagolovok {
+  color: #424242;
+  background-color: #424242;
+  text-align: center;
+  border-radius: 20px;
+  width: 40px;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 30px;
+  position: relative;
+  top: -89px;
+}
+.country .h-prosto-zagolovok.active {
+  animation-name: h-prosto-zagolovok;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .h-revers-zagolovok {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 20px;
+  width: 40px;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 30px;
+  position: relative;
+  top: -89px;
+}
+.country .h-revers-zagolovok.active {
+  animation-name: h-revers-zagolovok;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .country-flex {
+  display: flex;
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.country .country-flex div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.country .country-flex div .h-prosto {
+  color: aliceblue;
+}
+.country .country-flex div .h-prosto.active {
+  animation-name: p-prosto;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .country-flex div .h-revers {
+  color: #424242;
+}
+.country .country-flex div .h-revers.active {
+  animation-name: p-revers;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .country-flex div .p-prosto {
+  color: aliceblue;
+}
+.country .country-flex div .p-prosto.active {
+  animation-name: p-prosto;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .country-flex div .p-revers {
+  color: #424242;
+}
+.country .country-flex div .p-revers.active {
+  animation-name: p-revers;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .country-flex div .img-prosto {
+  height: 400px;
+  position: relative;
+  left: 120%;
+}
+.country .country-flex div .img-prosto.active {
+  animation-name: animation-country;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .img-revers {
+  position: relative;
+  left: -120%;
+}
+.country .img-revers.active {
+  animation-name: animation-country;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.country .country-main-revers {
+  background-color: #424242;
+  color: aliceblue;
+}
+.country .country-main-revers .country-flex {
+  flex-direction: row-reverse;
+}
+.country .country-main-revers .country-flex .img-revers {
+  position: relative;
+  right: 220%;
+}
+
+.pomilka {
+  display: flex;
+  justify-content: center;
+}
+
+#pomilkaID {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 9px;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 30px;
+  animation-name: pomilka;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=stayle-country.css.map */

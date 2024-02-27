@@ -1,0 +1,14 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 90px;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=stayle.css.map */

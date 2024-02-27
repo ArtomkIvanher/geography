@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes prapor {
+  50% {
+    right: 1570px;
+  }
+  100% {
+    right: 1570px;
+    z-index: -100;
+  }
+}
+@keyframes strelka-v-verh {
+  0% {
+    bottom: 0px;
+  }
+  12% {
+    bottom: 7px;
+  }
+  25% {
+    bottom: -7px;
+  }
+  37% {
+    bottom: 7px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  62% {
+    bottom: 7px;
+  }
+  75% {
+    bottom: -7px;
+  }
+  87% {
+    bottom: 7px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.btn-linia {
+  position: relative;
+  color: #484848;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.btn-linia::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+.btn-linia:hover:before {
+  width: 100%;
+}
+.btn-linia::before {
+  transition: width 0.35s;
+}
+
+header {
+  background-color: #424242;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: top 0.195s;
+}
+header .header-div {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-div p {
+  margin: 0 10px;
+  cursor: pointer;
+}
+header .home {
+  display: flex;
+}
+header .home p {
+  color: #ffffff;
+  text-align: center;
+  border-radius: 9px;
+  font-size: 24px;
+  z-index: 9999;
+}
+header #krainaImg img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header #krainaImg .anim-p {
+  display: flex;
+  align-items: center;
+}
+header #krainaImg .anim-p p {
+  color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  right: 240px;
+  font-size: 24px;
+  cursor: default;
+}
+header #krainaImgDiv {
+  background: linear-gradient(to right, #424242, #424242, #424242, #424242, #424242, #424242, #424242, rgba(72, 72, 72, 0));
+  height: 100%;
+  width: 1500px;
+  position: absolute;
+  right: -270px;
+  top: 0;
+  z-index: 100;
+}
+header #krainaImgDiv.active {
+  animation-name: prapor;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.strelka-v-verh {
+  background-color: #424242;
+  border-radius: 9px;
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: -150px;
+  width: 200px;
+  cursor: pointer;
+}
+.strelka-v-verh img {
+  height: 25px;
+  padding: 10px;
+  position: relative;
+  left: -3px;
+  margin: 3px 0;
+}
+.strelka-v-verh img:hover {
+  animation-name: strelka-v-verh;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+#mainID {
+  width: 90%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 20px 1%;
+  list-style: none;
+}
+
+.main-card {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card {
+  border: solid 1px #424242;
+  overflow: hidden;
+  width: 204px;
+  height: 240px;
+  background-color: #424242;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+.card .img {
+  height: 85%;
+}
+.card .img img {
+  height: 100%;
+}
+.card .blob-btn {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0);
+  height: 35px;
+  position: relative;
+  font-size: 17px;
+}
+.card .blob-btn .p {
+  position: relative;
+  margin-top: 5px;
+}
+.card .blob-btn .p-left {
+  left: 15px;
+}
+.card .blob-btn .p-right {
+  right: 15px;
+}
+
+.el1 {
+  margin-top: 30px;
+}
+
+.el2 {
+  margin-top: 30px;
+}
+
+.el3 {
+  margin-top: 30px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=stayle-main.css.map */
