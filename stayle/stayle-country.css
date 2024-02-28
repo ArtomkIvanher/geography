@@ -98,6 +98,9 @@
   margin: 0 auto;
   padding: 60px 0;
 }
+.country .country-flex h2 {
+  margin-bottom: 10px;
+}
 .country .country-flex div {
   display: flex;
   flex-direction: column;

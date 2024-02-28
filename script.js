@@ -77,6 +77,10 @@ function btn(){
     document.querySelector("#el2").onclick = function(){
         list1.linstRender(DATA2, "el2", "Austria");
     }
+
+    document.querySelector("#el3").onclick = function(){
+        list1.linstRender(DATA3, "el3", "Germany");
+    }
     
     document.querySelector("#el100").onclick = function(){
         list1.linstRender(DATA100, "el100", "Ukraine");

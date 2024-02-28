@@ -19,8 +19,8 @@ const DATA = [
         id: "el3",
         setting: "center",
         color: "ff0000",
-        p1: "Azerbaijan",
-        p2: "Азербайджан"
+        p1: "Germany",
+        p2: "Німеччина"
     },
     {
         id: "el4",
