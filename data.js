@@ -42,7 +42,7 @@ const DATA = [
     {
         id: "el147",
         setting: "center",
-        color: "ff0000",
+        color: "00ff00",
         p1: "Germany",
         p2: "Німеччина"
     },
