@@ -4,7 +4,7 @@ let x = 0;
 document.querySelector("#romdome").onclick = function(){
     
     for (let num = 0; num < 100; num++) {
-        i = Math.floor(Math.random() * 5 + 1)
+        i = Math.floor(Math.random() * 6 + 1)
         if (i != x){
             num = 101
         }
@@ -24,6 +24,9 @@ document.querySelector("#romdome").onclick = function(){
     }
     else if(i == 5){
         list1.linstRender(DATA147, "el147", "Germany");
+    }
+    else if(i == 6){
+        list1.linstRender(DATA214, "el214", "USA");
     }
 
     x = i;
