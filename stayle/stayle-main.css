@@ -106,13 +106,14 @@ header #krainaImg .anim-p {
   display: flex;
   align-items: center;
 }
-header #krainaImg .anim-p p {
+header #krainaImg .anim-p a {
   color: #ffffff;
   display: inline-block;
   position: absolute;
   right: 240px;
   font-size: 24px;
-  cursor: default;
+  text-decoration: none;
+  cursor: pointer;
 }
 header #krainaImgDiv {
   background: linear-gradient(to right, #424242, #424242, #424242, #424242, #424242, #424242, #424242, rgba(72, 72, 72, 0));

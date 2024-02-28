@@ -1,11 +1,11 @@
 
 class listDATA{
 
-    linstRender(DATAL, p, name) {
+    linstRender(DATAL, p, name, site) {
         let htmlDATA = "";
         let htmllist = "";
 
-        prapor(p, name);
+        prapor(p, name, site);
         DATAL.forEach(({img, year1, year2, h1, h2, text1, text2}) => {
             if(year1){
                 htmllist += `

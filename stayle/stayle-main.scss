@@ -127,13 +127,15 @@ header {
             display: flex;
             align-items: center;
             
-            p{
+            a{
                 color: $colorFont;
                 display: inline-block;
                 position: absolute;
                 right: 240px;
                 font-size: 24px;
-                cursor: default;
+                text-decoration: none;
+                cursor: pointer;
+                
             }
         }
     }
@@ -257,6 +259,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 
 
 

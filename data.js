@@ -16,6 +16,14 @@ const DATA = [
         p2: "Австрия"
     },
     {
+        id: "el61",
+        setting: "greece",
+        color: "00ff00",
+        colorText: "000",
+        p1: "Greece",
+        p2: "Греція"
+    },
+    {
         id: "el100",
         setting: "",
         color: "00ff00",
