@@ -187,10 +187,15 @@ header {
 #mainID {
     width: 90%;
     margin: 0px auto;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 20px 1%;
     list-style: none;
+}
+
+#mainID2{
+    margin-top: -30px;
 }
 
 .main-card {
@@ -245,17 +250,7 @@ header {
     
 } 
 
-.el1{
-    margin-top: 30px;
-}
 
-.el2{
-    margin-top: 30px;
-}
-
-.el3{
-    margin-top: 30px;
-}
 
 .center {
     display: flex;

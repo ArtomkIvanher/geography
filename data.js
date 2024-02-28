@@ -16,13 +16,6 @@ const DATA = [
         p2: "Австрия"
     },
     {
-        id: "el3",
-        setting: "center",
-        color: "ff0000",
-        p1: "Germany",
-        p2: "Німеччина"
-    },
-    {
         id: "el4",
         setting: "center",
         color: "ff0000",
@@ -45,6 +38,13 @@ const DATA = [
         colorText: "000",
         p1: "Ukraine",
         p2: "Україна"
+    },
+    {
+        id: "el147",
+        setting: "center",
+        color: "ff0000",
+        p1: "Germany",
+        p2: "Німеччина"
     },
     {
         id: "el256",

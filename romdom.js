@@ -23,7 +23,7 @@ document.querySelector("#romdome").onclick = function(){
         list1.linstRender(DATA256, "el256", "Japan");
     }
     else if(i == 5){
-        list1.linstRender(DATA3, "el3", "Germany");
+        list1.linstRender(DATA147, "el147", "Germany");
     }
 
     x = i;
