@@ -43,7 +43,6 @@
 }
 .btn-linia {
   position: relative;
-  color: #484848;
   font-size: 1.25rem;
   text-decoration: none;
 }
@@ -157,8 +156,7 @@ header #krainaImgDiv.active {
 
 #mainID {
   width: 90%;
-  margin: 0px auto;
-  margin-top: 30px;
+  margin: 30px auto 50px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 20px 1%;
@@ -213,4 +211,41 @@ header #krainaImgDiv.active {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer {
+  background-color: #424242;
+  height: 100px;
+  display: flex;
+  color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  color: #ffffff;
+  font-size: 24px;
+}
+footer .silka {
+  display: flex;
+  justify-content: space-between;
+}
+footer .silka a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer .sot-seti {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+footer .sot-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .telegramICO {
+  width: 50px;
 }/*# sourceMappingURL=stayle-main.css.map */

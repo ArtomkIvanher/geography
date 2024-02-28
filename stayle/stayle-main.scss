@@ -49,7 +49,6 @@ $p-LR: 15px;
 
 .btn-linia{
     position: relative;
-	color: #484848;
 	font-size: 1.25rem;
 	text-decoration: none;
 
@@ -135,7 +134,6 @@ header {
                 font-size: 24px;
                 text-decoration: none;
                 cursor: pointer;
-                
             }
         }
     }
@@ -188,8 +186,7 @@ header {
 
 #mainID {
     width: 90%;
-    margin: 0px auto;
-    margin-top: 30px;
+    margin: 30px auto 50px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 20px 1%;
@@ -258,6 +255,49 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer{
+    background-color: $color1;
+    height: 100px;
+    display: flex;
+    color: rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        color: $colorFont;
+        font-size: 24px;
+    }
+
+    .silka{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            color: $colorFont;
+            font-size: 24px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .sot-seti{
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+
+    .sot-set{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .telegramICO{
+        width: 50px;
+    }
 }
 
 
