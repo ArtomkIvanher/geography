@@ -202,6 +202,10 @@ header {
     cursor: pointer;
 }
 
+.main-box{
+    min-height: 100vh;
+}
+
 .card {
     border: solid 1px $color1;
 

@@ -172,6 +172,10 @@ header #krainaImgDiv.active {
   cursor: pointer;
 }
 
+.main-box {
+  min-height: 100vh;
+}
+
 .card {
   border: solid 1px #424242;
   overflow: hidden;

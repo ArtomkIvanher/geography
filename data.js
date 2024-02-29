@@ -2,7 +2,7 @@ const DATA = [
     {
         id: "el1",
         setting: "",
-        color: "ffff00",
+        color: "00ff00",
         colorText: "000",
         p1: "Australia",
         p2: "Австралія"
