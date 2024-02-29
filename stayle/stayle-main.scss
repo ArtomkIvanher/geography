@@ -265,6 +265,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 18px;
 
     a{
         color: $colorFont;
@@ -275,6 +276,16 @@ footer{
         margin-top: 10px;
     }
 
+    .silki{
+        width: 330px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .silki-wiki{
+        width: 255px;
+    }
+
     .silka{
         display: flex;
         justify-content: space-between;
@@ -283,6 +294,7 @@ footer{
             color: $colorFont;
             font-size: 24px;
             text-decoration: none;
+            margin-top: 3px;
             cursor: pointer;
         }
     }
@@ -290,7 +302,7 @@ footer{
     .sot-seti{
         display: flex;
         justify-content: space-between;
-        width: 220px;
+        width: 330px;
     }
 
     .sot-set{

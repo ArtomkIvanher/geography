@@ -221,10 +221,22 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 18px;
 }
 footer a {
   color: #ffffff;
   font-size: 24px;
+}
+footer .footer-p-seredina {
+  margin-top: 10px;
+}
+footer .silki {
+  width: 330px;
+  display: flex;
+  justify-content: center;
+}
+footer .silki-wiki {
+  width: 255px;
 }
 footer .silka {
   display: flex;
@@ -234,12 +246,13 @@ footer .silka a {
   color: #ffffff;
   font-size: 24px;
   text-decoration: none;
+  margin-top: 3px;
   cursor: pointer;
 }
 footer .sot-seti {
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 330px;
 }
 footer .sot-set {
   display: flex;
