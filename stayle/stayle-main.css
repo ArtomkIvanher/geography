@@ -41,6 +41,20 @@
     bottom: 0px;
   }
 }
+@keyframes oberezhno {
+  25% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: #424242;
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: #424242;
+  }
+}
 .btn-linia {
   position: relative;
   font-size: 1.25rem;
@@ -226,13 +240,50 @@ footer {
   justify-content: space-around;
   align-items: center;
   font-size: 18px;
+  z-index: -100;
 }
 footer a {
   color: #ffffff;
   font-size: 24px;
 }
+footer .infa {
+  width: 540px;
+  text-align: center;
+}
 footer .footer-p-seredina {
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-p-seredina p {
+  z-index: 10;
+}
+footer .footer-p-seredina img {
+  height: 30px;
+}
+footer .footer-p-seredina .anim-popereginya {
+  background-color: #424242;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+footer .footer-p-seredina .anim-popereginya-1 {
+  left: 55px;
+}
+footer .footer-p-seredina .anim-popereginya-1.active {
+  animation-name: oberezhno;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+footer .footer-p-seredina .anim-popereginya-2 {
+  right: 55px;
+}
+footer .footer-p-seredina .anim-popereginya-2.active {
+  animation-name: oberezhno;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 footer .silki {
   width: 330px;

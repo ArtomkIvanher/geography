@@ -58,6 +58,7 @@ class Country {
         
 
         btn();
+        anima();
 
         
 
