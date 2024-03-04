@@ -14,6 +14,7 @@ $p-LR: 15px;
     100%{
         right: 1570px;
         z-index: -100;
+        display: none;
     }
 }
 
@@ -97,8 +98,6 @@ header {
     top: 0;  
     z-index: 100;
     transition: top 0.195s;
-    
-    
 
     .header-div {
         width: 70%;
@@ -110,6 +109,10 @@ header {
         p {
             margin: 0 10px;
             cursor: pointer;
+        }
+
+        @media (max-width: 48em){
+            width: 100%;
         }
     }
 
@@ -130,11 +133,29 @@ header {
 
     #krainaImg{
 
-        img{
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
+        @media (min-width: 48em){
+            img{
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .anim-p{
+
+                display: flex;
+                align-items: center;
+                
+                a{
+                    color: $colorFont;
+                    display: inline-block;
+                    position: absolute;
+                    right: 240px;
+                    font-size: 24px;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
         }
 
         .anim-p{
@@ -145,14 +166,26 @@ header {
             a{
                 color: $colorFont;
                 display: inline-block;
-                position: absolute;
-                right: 240px;
                 font-size: 24px;
                 text-decoration: none;
                 cursor: pointer;
+                margin-right: 10px;
+            }
+        }
+
+        
+
+        @media (max-width: 48em){
+            img{
+                display: none;
+
+                a{
+
+                }
             }
         }
     }
+
 
     #krainaImgDiv{
         background: linear-gradient(to right, #424242, #424242, #424242, #424242, #424242, #424242, #424242, #48484800);
@@ -170,6 +203,10 @@ header {
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
         }
+    }
+
+    @media (max-width: 48em){
+        
     }
 }
 
@@ -198,6 +235,19 @@ header {
         }
     }
 
+}
+
+@media (max-width: 48em){
+    .strelka-v-verh{
+        background-color: $color1;
+        border-radius: 9px;
+        position: fixed;
+        z-index: 100; 
+        bottom: 20px;
+        left: 30px;
+        width: 200px;
+        cursor: pointer;
+    }
 }
 
 #mainID {

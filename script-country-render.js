@@ -24,7 +24,7 @@ class listDATA{
                                         </p>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="country-img">
                                     <img class="anim-items img-prosto" src="img/${img}img1.png" alt="">
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ class listDATA{
                                         </p>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="country-img">
                                     <img class="anim-items  img-revers" src="img/${img}img2.png" alt="">
                                 </div>
                             </div>
