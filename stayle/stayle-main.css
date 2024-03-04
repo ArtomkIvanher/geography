@@ -150,7 +150,7 @@ header #krainaImg .anim-p a {
 }
 @media (max-width: 48em) {
   header #krainaImg img {
-    display: none;
+    height: 100px;
   }
 }
 header #krainaImgDiv {
@@ -168,6 +168,7 @@ header #krainaImgDiv.active {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 .strelka-v-verh {
   background-color: #424242;
   border-radius: 9px;
@@ -345,4 +346,47 @@ footer .sot-set {
 }
 footer .telegramICO {
   width: 50px;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .sot-seti {
+    width: 70%;
+  }
+  footer .footer-p-seredina {
+    flex-direction: column;
+  }
+  footer .footer-p-seredina .anim-popereginya {
+    background-color: #424242;
+    height: 40px;
+    width: 40px;
+    position: relative;
+  }
+  footer .footer-p-seredina .anim-popereginya-1 {
+    left: 0px;
+    top: 35px;
+  }
+  footer .footer-p-seredina .anim-popereginya-1.active {
+    animation-name: oberezhno;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  footer .footer-p-seredina .anim-popereginya-2 {
+    right: 0px;
+    bottom: 35px;
+  }
+  footer .footer-p-seredina .anim-popereginya-2.active {
+    animation-name: oberezhno;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  footer > div {
+    margin: 25px 0;
+  }
 }/*# sourceMappingURL=stayle-main.css.map */
