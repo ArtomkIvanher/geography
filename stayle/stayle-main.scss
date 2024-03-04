@@ -235,14 +235,7 @@ header {
 
 @media (max-width: 48em){
     .strelka-v-verh{
-        background-color: $color1;
-        border-radius: 9px;
-        position: fixed;
-        z-index: 100; 
-        bottom: 20px;
-        left: 30px;
-        width: 200px;
-        cursor: pointer;
+        display: none;
     }
 }
 
