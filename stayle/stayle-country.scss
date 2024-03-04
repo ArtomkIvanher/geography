@@ -110,6 +110,13 @@ $color1: #424242;
         }
     }
 
+    @media (max-width: 48em){
+        .h-prosto-zagolovok, .h-revers-zagolovok{
+            margin-top: 50px;
+        }
+    }
+    
+
     .country-flex{
         display: flex;
         font-size: 1.4rem;
@@ -256,7 +263,6 @@ $color1: #424242;
     }
     
 }
-
 
 .pomilka{
     display: flex;

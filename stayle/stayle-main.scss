@@ -177,7 +177,7 @@ header {
 
         @media (max-width: 48em){
             img{
-                height: 100px;
+                display: none;
             }
         }
     }
@@ -229,20 +229,17 @@ header {
 
 }
 
-@media (max-width: 48em){
-    .strelka-v-verh{
-        display: none;
+@media (min-width: 48em){
+    #mainID {
+        width: 100%;
+        margin: 30px auto 50px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 20px 1%;
+        list-style: none;
     }
 }
 
-#mainID {
-    width: 90%;
-    margin: 30px auto 50px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 20px 1%;
-    list-style: none;
-}
 
 #mainID2{
     margin-top: -30px;
@@ -259,6 +256,13 @@ header {
 
 .card {
     border: solid 1px $color1;
+    overflow: hidden;
+    width: 204px;
+    height: 240px;
+    background-color: $color1;
+    color:$colorFont;
+    text-align: center;
+    margin: 0 0 0 0;
 
     .img{
         height: 85%;
@@ -268,13 +272,11 @@ header {
         }
     }
 
-    overflow: hidden;
-    width: 204px;
-    height: 240px;
-    background-color: $color1;
-    color:$colorFont;
-    text-align: center;
-    margin: 0 0 0 0;
+    @media (max-width: 48em){
+        .img{
+            height: 85%;
+        }
+    }
 
     .blob-btn{
         display: flex;
@@ -303,6 +305,24 @@ header {
 
     
 } 
+
+
+@media (max-width: 48em){
+    .strelka-v-verh{
+        display: none;
+    }
+
+    #mainID {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .card{
+        margin: 10px 0;
+    }
+}
 
 
 
@@ -422,42 +442,17 @@ footer{
         display: flex;
         flex-direction: column;
 
-        .sot-seti{
-            width: 70%;
-        }
-
         .footer-p-seredina{
             flex-direction: column;
 
-            .anim-popereginya{
-                background-color: $color1;
-                height: 40px;
-                width: 40px;
-                position: relative;
-            }
-    
             .anim-popereginya-1{
                 left: 0px;
                 top: 35px;
-    
-                &.active{
-                    animation-name: oberezhno ;
-                    animation-duration: 2s;
-                    animation-iteration-count: 1;
-                    animation-fill-mode: forwards;
-                }
             }
     
             .anim-popereginya-2{
                 right: 0px;
                 bottom: 35px;
-    
-                &.active{
-                    animation-name: oberezhno ;
-                    animation-duration: 2s;
-                    animation-iteration-count: 1;
-                    animation-fill-mode: forwards;
-                }
             }
         }
     }

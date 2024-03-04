@@ -150,7 +150,7 @@ header #krainaImg .anim-p a {
 }
 @media (max-width: 48em) {
   header #krainaImg img {
-    height: 100px;
+    display: none;
   }
 }
 header #krainaImgDiv {
@@ -193,20 +193,16 @@ header #krainaImgDiv.active {
   animation-fill-mode: forwards;
 }
 
-@media (max-width: 48em) {
-  .strelka-v-verh {
-    display: none;
+@media (min-width: 48em) {
+  #mainID {
+    width: 100%;
+    margin: 30px auto 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px 1%;
+    list-style: none;
   }
 }
-#mainID {
-  width: 90%;
-  margin: 30px auto 50px;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 20px 1%;
-  list-style: none;
-}
-
 #mainID2 {
   margin-top: -30px;
 }
@@ -236,6 +232,11 @@ header #krainaImgDiv.active {
 .card .img img {
   height: 100%;
 }
+@media (max-width: 48em) {
+  .card .img {
+    height: 85%;
+  }
+}
 .card .blob-btn {
   display: flex;
   justify-content: space-around;
@@ -255,6 +256,20 @@ header #krainaImgDiv.active {
   right: 15px;
 }
 
+@media (max-width: 48em) {
+  .strelka-v-verh {
+    display: none;
+  }
+  #mainID {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .card {
+    margin: 10px 0;
+  }
+}
 .center {
   display: flex;
   flex-direction: column;
@@ -354,37 +369,16 @@ footer .telegramICO {
     display: flex;
     flex-direction: column;
   }
-  footer .sot-seti {
-    width: 70%;
-  }
   footer .footer-p-seredina {
     flex-direction: column;
-  }
-  footer .footer-p-seredina .anim-popereginya {
-    background-color: #424242;
-    height: 40px;
-    width: 40px;
-    position: relative;
   }
   footer .footer-p-seredina .anim-popereginya-1 {
     left: 0px;
     top: 35px;
   }
-  footer .footer-p-seredina .anim-popereginya-1.active {
-    animation-name: oberezhno;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
   footer .footer-p-seredina .anim-popereginya-2 {
     right: 0px;
     bottom: 35px;
-  }
-  footer .footer-p-seredina .anim-popereginya-2.active {
-    animation-name: oberezhno;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   footer > div {
     margin: 25px 0;

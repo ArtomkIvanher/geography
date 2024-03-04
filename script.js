@@ -33,11 +33,17 @@ class Country {
                     }
 
                     .${id}:hover{
+
+                    }
+
+                    @media (min-width: 48em){
+                        .${id}:hover{
         
-                        animation-name: ${id};
-                        animation-duration: 0.75s;
-                        animation-iteration-count: 1;
-                        animation-fill-mode: forwards;
+                            animation-name: ${id};
+                            animation-duration: 0.75s;
+                            animation-iteration-count: 1;
+                            animation-fill-mode: forwards;
+                        }
                     }
                 </style>
 
