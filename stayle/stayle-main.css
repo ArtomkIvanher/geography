@@ -262,6 +262,7 @@ header #krainaImgDiv.active {
   }
   #mainID {
     width: 100%;
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -292,7 +293,6 @@ footer a {
   font-size: 24px;
 }
 footer .infa {
-  width: 540px;
   text-align: center;
 }
 footer .footer-p-seredina {
@@ -313,7 +313,7 @@ footer .footer-p-seredina .anim-popereginya {
   position: relative;
 }
 footer .footer-p-seredina .anim-popereginya-1 {
-  left: 55px;
+  left: 40px;
 }
 footer .footer-p-seredina .anim-popereginya-1.active {
   animation-name: oberezhno;
@@ -322,7 +322,7 @@ footer .footer-p-seredina .anim-popereginya-1.active {
   animation-fill-mode: forwards;
 }
 footer .footer-p-seredina .anim-popereginya-2 {
-  right: 55px;
+  right: 40px;
 }
 footer .footer-p-seredina .anim-popereginya-2.active {
   animation-name: oberezhno;

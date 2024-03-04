@@ -91,11 +91,6 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-@media (max-width: 48em) {
-  .country .h-prosto-zagolovok, .country .h-revers-zagolovok {
-    margin-top: 50px;
-  }
-}
 .country .country-flex {
   display: flex;
   font-size: 1.4rem;
