@@ -90,7 +90,7 @@ $p-LR: 15px;
 header {
     background-color: $color1;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -178,10 +178,6 @@ header {
         @media (max-width: 48em){
             img{
                 display: none;
-
-                a{
-
-                }
             }
         }
     }
