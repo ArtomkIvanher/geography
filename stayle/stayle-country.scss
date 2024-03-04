@@ -199,6 +199,12 @@ $color1: #424242;
                     animation-fill-mode: forwards;
                 }
             }
+
+            @media (max-width: 48em){
+                .img-prosto{
+                    left: -120%;
+                }
+            }
         }
     }
 

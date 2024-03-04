@@ -164,6 +164,11 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+@media (max-width: 48em) {
+  .country .country-flex div .img-prosto {
+    left: -120%;
+  }
+}
 .country .country-img {
   max-width: 40%;
 }
